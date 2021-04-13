@@ -1,27 +1,76 @@
-#conteneur
+p
+{
+    font-family: Raleway
+}
+    
+body
+{
+    overflow-x: hidden;
+}
+
+#bloc_page
+{
+    width: 100%;
+
+    max-height:unset;
+    
+    margin: auto;
+    
+    position: absolute;
+}
+
+#header
 {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-
-    height: 500px;
-    border: 2px solid #444; 
-}
-.element
-{
-    width: 150px;
     height: 100px;
+    position: relative;
+    
 }
-.element:nth-child(n)
+
+.logo
 {
-    background-color: orange;
-   
+ height: 50px;
 }
-.element:nth-child(2n)
+div
 {
-    background-color: blue;
+    display: inline-block;
 }
-.element:nth-child(3n)
+
+.info
 {
-    background-color: #ab6;
+
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    background-color: #F2F2F2;
+
+}
+#navigateur
+{
+    display: inline-flex;
+    justify-content: space-between;
+    justify-content:flex-end;
+    width: 100%;
+    height: 200px;
+}
+
+.nav
+{
+    display: flex;
+    align-content:space-between;
+    background-color: teal;
+    justify-content: right;
+    width :min-content;
+    height : 50px ;
+    position: auto;
+}
+
+#footer
+{
+    display: flex;
+   position: absolute;
+   background-color:  #F2F2F2;
+   width: 100%;
+   justify-content: space-around;
 }
