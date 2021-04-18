@@ -51,8 +51,7 @@ div
 #conteneur1
 {
     height: 650px; 
-    width: 75%; 
-    display: flex;
+    width: 1008px; 
     flex-direction: row;
     
 }
@@ -61,21 +60,19 @@ div
     width: 240px;
     height: 200px;
     background-color: red; 
-    display: flex;
     margin: 10px;
 }
 
 #conteneur2
 {
     height: 650px; 
-    width: 25%; 
-    display: flex;
+    width: 432px; 
     flex-direction: column;
 }
 .element2
 {
-    height: fit-content;
-    width: fit-content;
+    height: 150px;
+    width: 340px;
     background-color: lawngreen; 
     display: flex;
     margin: 10px;
