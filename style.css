@@ -3,6 +3,7 @@
 {
     width: 100%;
     max-width: 1440px;
+    font-family: 'Raleway';
 }
 /* header */
 #header
@@ -76,4 +77,44 @@ div
     background-color: lawngreen; 
     display: flex;
     margin: 10px;
+}
+#Activités    
+{
+    height: 570px; 
+    width: 100%;
+    display: flex;
+}
+/*pied de page*/
+
+footer
+{
+    display: inline-flex; 
+    height: 222px; 
+    background: #f2f2f2;;
+    position:relative;
+    bottom:0;
+    width:100%;
+    
+}
+.ftr4
+{
+    list-style-type: none;
+    text-align:justify;
+}
+span
+{
+    display: flex;
+    padding: 0px;
+    padding-left: 55px;
+    margin: 0px;
+    margin-right: 288px;
+}
+#pied_de_page
+{
+    padding-block: 20px;
+
+}
+li
+{
+    margin: 18px;
 }
