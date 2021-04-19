@@ -9,13 +9,11 @@
 #header
 {
     height: 110px;
-    display: flex;
-    
+    position: relative;
 }
 .block-logo
 {
     height: 110px;
-    width: 70%;
     background-color: transparent;
 }
 .logo
@@ -29,7 +27,8 @@
 }
 #nav
 {
-    position: relative;
+    position: absolute;
+    right: 0px;
     padding-top: 10px;
 }
 .navbar
@@ -38,6 +37,7 @@
     right: 0px; 
     list-style: none; 
     height: 100px;
+    position: absolute;
     
     
 }
@@ -123,5 +123,5 @@ span
 }
 li
 {
-    margin: 18px;
+    margin: 0px;
 }
