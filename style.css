@@ -9,45 +9,51 @@
 #header
 {
     height: 110px;
-    width: 100%;
     display: flex;
+    
 }
-
+.block-logo
+{
+    height: 110px;
+    width: 70%;
+    background-color: transparent;
+}
 .logo
 {
     width: 100px;
     height: auto;
     display: flex;
     vertical-align: middle;
+    align-items: baseline;
+    padding-top: 25px;
 }
-nav
+#nav
+{
+    position: relative;
+    padding-top: 10px;
+}
+.navbar
 {
     height: 110px; 
-    width: 40%; 
+    right: 0px; 
     list-style: none; 
-    display: flex;
     height: 100px;
-    flex-direction: column;
+    
     
 }
-.block-logo
+.nav-item
 {
-    height: 110px; 
-    width: 60%;
-    background-color: transparent;
+    height: 110px;
+    flex-basis: 33%;
+    flex-direction: row;
+    display: inline-block;
 }
 div
 {
     display: inline-block;
 }
 
-.nav-item
-{
-    height: 110px;
-    width: 25%;
-    flex-direction: row;
-    display: inline-block;
-}
+
 /* section + aside */
 #conteneur1
 {
@@ -78,11 +84,12 @@ div
     display: flex;
     margin: 10px;
 }
-#Activités    
+#conteneur3    
 {
     height: 570px; 
     width: 100%;
-    display: flex;
+    display: inline-flex;
+    padding-top: 25px;
 }
 /*pied de page*/
 
