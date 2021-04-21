@@ -8,16 +8,18 @@
             <title>Reservia</title>        
     </head>
     <body>     
-        <div id="page">
-            <!--Navigateur-->
+        <div class="page">
+    <!--           Navigateur           -->
             <header>
-                <div id="navigateur">
+                <div class="navigateur">
+
                  <div class="logo">
-                    <a href="#">
-                        <img src="logo/Reservia@3x-.png" alt="Logo Reservia"/>
-                    </a>
+                        <a href="#">
+                            <img src="logo/Reservia@3x-.png" alt="Logo Reservia"/>
+                        </a>
                  </div>
-                    <div id="menu">
+
+                    <div class="menu">
                         <nav>
                             <ul>
                                 <li><a href="#Hébergementsancre">Hébergements</a></li>
@@ -26,65 +28,100 @@
                         </nav>
                     </div>
                     
-                    <div class="signin">
-                    <a href="#">S'inscrire</a>
+                    <div class="links">
+                        <a href="#">S'inscrire</a>
                     </div>
                 </div>
             </header>
-              <div class="inderheader">                
+    <!--            RECHERCHE           -->            
+                <div class="inderheader">   
+
                    <div>
                         <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
+
                     <form>
                         <div class="recherche">
                             <span>
                                 <i class="fas fa-map-marker-alt"></i>
-                                <input type="search" id="mysearch" name="recherche" placeholder="Marseille,France"><button class="submit">Rechercher</button>
-                                <i class="fas fa-search searchIcon"></i>
                             </span>
+                            <input type="search" id="mysearch" name="recherche" placeholder="Marseille,France"><button class="submit">Rechercher</button>
+                            <i class="fas fa-search searchIcon"></i>
                         </div>
                     </form>
-             </div>
-                 <i class="fas fa-money-bill-wave"></i>
-                    <i class="fas fa-child"></i>
-                    <i class="fas fa-heart"></i>
-                 <i class="fas fa-dog"></i>
-            
-            
-           <div style="display: flex;">
-            <section id="conteneur1">
-                <h3 id="Hébergementsancre">Hébergements à Marseille</h3>
-                <div>
-                    <div class="element1"></div>
-                    <div class="element1"></div>
-                    <div class="element1"></div>
-                    <div class="element1"></div>
-                    <div class="element1"></div>
-                    <div class="element1"></div>
                 </div>
-            </section><!--
-         --><aside id="conteneur2">
-                    <div class="element2"></div>
-                    <div class="element2"></div>
-                    <div class="element2"></div>
-            </aside>
-        </div>
-        <div id="conteneur3">
-            <h3 id="Activitésancre">Activités à Marseille</h3>
 
-            <div style="height: 450px; width: 300px; background-color: lightblue;"></div>
-            <div>
-                <div style="height: 240px; width: 300px; background-color: red;"></div>
-                <div style="height: 160px; width: 300px; background-color: blue;"></div>
-            </div>
-            <div style="height: 450px; width: 300px; background-color: yellow;"></div>
-            <div>
-                <div style="height: 200px; width: 300px; background-color: green;"></div>
-                <div style="height: 210px; width: 300px; background-color: orange;"></div>
-            </div>
-        </div>
-            <footer>
+                <section class="filtres">
+
+                    <div class="filtrephoto">
+
+                        <h2 class="titre-filtres">Filtres</h2>
+
+                        <div class="filter-container">
+
+                            <div class="button-filter">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <p><a href="#">économique</a></p>
+                            </div>
+                        
+                            <div class="button-filter">
+                                <i class="fas fa-child"></i>
+                                <p><a href="#">Familial</a></p>
+                            </div>
+
+                            <div class="button-filter">
+                                <i class="fas fa-heart"></i>
+                                <p><a href="#">Romantique</a></p>
+                            </div>
+
+                            <div class="button-filter">
+                                <i class="fas fa-dog"></i>
+                                <p><a href="#">Animaux autorisés</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filtreI">
+                        <div class="iconeI">
+                            <i class="fas fa-info"></i>
+                        </div>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                </section>
+            
+                <div>
+                  <section id="conteneur1">
+                        <h3 id="Hébergementsancre">Hébergements à Marseille</h3>
+                        <div class="block_hebergement">
+                            <div class="element1"></div>
+                            <div class="element1"></div>
+                            <div class="element1"></div>
+                            <div class="element1"></div>
+                            <div class="element1"></div>
+                            <div class="element1"></div>
+                        </div>
+                 </section><!--
+                 --><aside id="conteneur2">
+                        <div class="element2"></div>
+                        <div class="element2"></div>
+                        <div class="element2"></div>
+                    </aside>
+                </div>
+             <div id="conteneur3">
+                   <h3 id="Activitésancre">Activités à Marseille</h3>
+
+                  <div style="height: 450px; width: 300px; background-color: lightblue;"></div>
+                  <div>
+                      <div style="height: 240px; width: 300px; background-color: red;"></div>
+                      <div style="height: 160px; width: 300px; background-color: blue;"></div>
+                 </div>
+                  <div style="height: 450px; width: 300px; background-color: yellow;"></div>
+                  <div>
+                      <div style="height: 200px; width: 300px; background-color: green;"></div>
+                      <div style="height: 210px; width: 300px; background-color: orange;"></div>
+                  </div>
+             </div>
+                <footer>
                     <div id="pied_de_page" class="ftr_lft">
                         <span>
                             <h3>A propos</h3> 
@@ -114,8 +151,7 @@
                         </ul>
                     </div>
                  
-            </footer>
-            
+                </footer>
         </div>
     </body>
  </html>

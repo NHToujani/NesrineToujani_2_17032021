@@ -4,13 +4,13 @@ body
     font-family: 'Raleway';
     margin: 0px;
 }
-#page
+.page
 {
     padding: 2em;
     
 }
 /* header */
-#navigateur
+.navigateur
 {
     display: flex;
     justify-content: space-between;
@@ -27,12 +27,12 @@ a
 }
 
 /* Navigateur */
-#menu
+.menu
 {
     display: flex;
     right: 0px;
 }
-#menu h2
+.menu h2
 {
     font-size: 18px;
     margin-left: 1em;
@@ -56,12 +56,12 @@ nav li :hover {
     border-top: 2px solid #0065fc;
     color:#0065fc;
 }
-.signin {
+.links {
     display: flex;
     align-items: center;
     padding-bottom: 8px;
 }
-.signin a
+.links a
 {
     text-decoration: none;
     font-weight: bold;
@@ -73,18 +73,21 @@ h1
     font-size: 20px;
 }
                 /*recherche*/
-.recherche {
+.recherche 
+{
     display: flex;
     align-items: center;
     margin: 10px 0 30px 0;}
-.recherche i {
+.recherche i 
+{
     background-color:#F2F2F2;
     padding: 13px 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px; 
-    padding: 12.9px;
+    
   }
-  .submit {
+.submit
+{
     padding: 13px;
     font-size: 12px;
     background-color:#0065FC;
@@ -108,7 +111,79 @@ h1
 .recherche .fa-search{
   display: none;
 }
+/*Filtres*/
 
+
+.filtrephoto
+{
+display: flex;
+align-items: center;
+}
+.filter-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.titre-filtres
+{
+padding-right: 1em;
+}
+
+.button-filter
+{
+display: flex;
+align-items: center;
+margin-right: 2em;
+border: 2px solid #f2f2f2;
+border-radius: 30px;
+height: 2.5em;
+}
+.filter-container :hover
+{
+    color:#0065FC;
+    background-color: #deebff;
+}
+.button-filter a
+{
+    text-decoration: none;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.filtrephoto i
+{
+    background-color: #deebff;
+    padding: 0.8em;
+    border-radius: 30px;
+    color: #0065FC;
+}
+.filtreI
+{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+.iconeI
+{
+width: 30px;
+height: 30px;
+padding-top: 0.5em;
+padding-right: 1em;
+}
+.filtreI i
+{
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    width: 10px;
+}
+.iconeI .fas
+{
+    font-size: 10px;
+    padding: 2px;
+    text-align: center;
+    color: #0065FC;
+    
+}
 /* section + aside */
 #conteneur1
 {
@@ -174,7 +249,7 @@ span
     padding: 0px;
     padding-left: 55px;
     margin: 0px;
-    margin-right: 288px;
+    
 }
 #pied_de_page
 {
@@ -184,4 +259,9 @@ span
 li
 {
     margin: 0px;
+}
+.filtres
+{
+    margin-left: 20px;
+    margin-right: 20px;
 }
