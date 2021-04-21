@@ -3,40 +3,58 @@
     <head>
             <meta charset="utf-8" />
             <link rel="stylesheet" href="style.css"/>
-            
-            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script src="https://kit.fontawesome.com/2fc11b6a0e.js" crossorigin="anonymous"></script>
             <title>Reservia</title>        
     </head>
     <body>     
         <div id="page">
-            <header id="header">
-                <div class="block-logo">
-                 <div>
-                     <img src="logo/Reservia@3x.png" alt="Logo Reservia" class="logo"/>
+            <!--Navigateur-->
+            <header>
+                <div id="navigateur">
+                 <div class="logo">
+                    <a href="#">
+                        <img src="logo/Reservia@3x-.png" alt="Logo Reservia"/>
+                    </a>
                  </div>
-                </div><!--
-                --><nav id="nav">
-                     <ul class="navbar">
-                      <li class ="nav-item" >
-                        <a href="#Hébergements">Hébergements</a></li>
-                      <li class ="nav-item" >
-                        <a href="#Activités">Activités</a></li> 
-                     <li class ="nav-item" >
-                        <a href="#">S'inscrire</a></li>
-                     </ul>
-                </nav>
+                    <div id="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#Hébergementsancre">Hébergements</a></li>
+                                <li><a href="#Activitésancre">Activités</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="signin">
+                    <a href="#">S'inscrire</a>
+                    </div>
+                </div>
             </header>
-            <section style="height: 500px; background-color:rgb(166, 166, 180)">
-                
-                <h3>dhsgqliurehtgdlksutjgrdfjgxdhfugjkb</h3>
-                <p>qsdgsyltmjdkxhdporlmsrk;DPQSDQDLY?QEPRHLDF</p>
-            <img src=""/>
-            <input placeholder="Zone"/>
-            <button>Rechercher</button>
-            </section>
+              <div class="inderheader">                
+                   <div>
+                        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+                    <form>
+                        <div class="recherche">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="search" id="mysearch" name="recherche" placeholder="Marseille,France"><button class="submit">Rechercher</button>
+                                <i class="fas fa-search searchIcon"></i>
+                            </span>
+                        </div>
+                    </form>
+             </div>
+                 <i class="fas fa-money-bill-wave"></i>
+                    <i class="fas fa-child"></i>
+                    <i class="fas fa-heart"></i>
+                 <i class="fas fa-dog"></i>
+            
+            
            <div style="display: flex;">
             <section id="conteneur1">
-                <h3 id="Hébergements">Hébergements à Marseille</h3>
+                <h3 id="Hébergementsancre">Hébergements à Marseille</h3>
                 <div>
                     <div class="element1"></div>
                     <div class="element1"></div>
@@ -53,7 +71,7 @@
             </aside>
         </div>
         <div id="conteneur3">
-            <h3 id="Activités">Activités à Marseille</h3>
+            <h3 id="Activitésancre">Activités à Marseille</h3>
 
             <div style="height: 450px; width: 300px; background-color: lightblue;"></div>
             <div>
