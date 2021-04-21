@@ -1,58 +1,113 @@
 /* body */
+body
+{
+    font-family: 'Raleway';
+    margin: 0px;
+}
 #page
 {
-    width: 100%;
-    max-width: 1440px;
-    font-family: 'Raleway';
+    padding: 2em;
+    
 }
 /* header */
-#header
+#navigateur
 {
-    height: 110px;
-    position: relative;
-}
-.block-logo
-{
-    height: 110px;
-    background-color: transparent;
-}
-.logo
-{
-    width: 100px;
-    height: auto;
     display: flex;
-    vertical-align: middle;
-    align-items: baseline;
-    padding-top: 25px;
+    justify-content: space-between;
+    margin-top: 10px;
 }
-#nav
+#navigateur img
 {
-    position: absolute;
-    right: 0px;
-    padding-top: 10px;
+    height: 50px;
 }
-.navbar
+a
 {
-    height: 110px; 
-    right: 0px; 
-    list-style: none; 
-    height: 100px;
-    position: absolute;
-    
-    
-}
-.nav-item
-{
-    height: 110px;
-    flex-basis: 33%;
-    flex-direction: row;
-    display: inline-block;
-}
-div
-{
-    display: inline-block;
+    text-decoration: none;
+    color: black;
 }
 
+/* Navigateur */
+#menu
+{
+    display: flex;
+    right: 0px;
+}
+#menu h2
+{
+    font-size: 18px;
+    margin-left: 1em;
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+}
+nav li
+{
+    list-style: none;
+}
+nav a {
+    color:black;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 3.2em;
+}
+nav li :hover {
+    border-top: 2px solid #0065fc;
+    color:#0065fc;
+}
+.signin {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.signin a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065FC;
+    padding-left: 2em;
+}
+h1
+{
+    font-size: 20px;
+}
+                /*recherche*/
+.recherche {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 30px 0;}
+.recherche i {
+    background-color:#F2F2F2;
+    padding: 13px 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    padding: 12.9px;
+  }
+  .submit {
+    padding: 13px;
+    font-size: 12px;
+    background-color:#0065FC;
+    cursor: pointer;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    width: 10em;
+}
+
+#mysearch {
+    border: 2px solid #f2f2f2;
+    padding: 0.85em;  
+    margin: 0px;
+}
+::placeholder{
+  color: black;
+  font-size: 16px;
+}
+.recherche .fa-search{
+  display: none;
+}
 
 /* section + aside */
 #conteneur1
@@ -60,7 +115,11 @@ div
     height: 650px; 
     width: 1008px; 
     flex-direction: row;
-    
+    display: inline-block;
+}
+.block_hebergement
+{
+    display: flex;
 }
 .element1
 {
@@ -75,6 +134,7 @@ div
     height: 650px; 
     width: 432px; 
     flex-direction: column;
+    
 }
 .element2
 {
