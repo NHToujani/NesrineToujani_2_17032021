@@ -111,7 +111,7 @@ h1
 .recherche .fa-search{
   display: none;
 }
-/*Filtres*/
+/* ********Filtres******** */
 
 
 .filtrephoto
@@ -161,7 +161,7 @@ height: 2.5em;
 {
     display: flex;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .iconeI
 {
@@ -184,16 +184,42 @@ padding-right: 1em;
     color: #0065FC;
     
 }
-/* section + aside */
-#conteneur1
+/* ********hebergements********* */
+
+.titre h3
 {
-    height: 650px; 
-    width: 1008px; 
-    flex-direction: row;
+    font-size: 18px;
+    margin-left: 1em;
+}
+.conteneur1
+{
     display: inline-block;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-top: 1em;
+    align-items: center;
+}
+.box_heberg carte-heb
+{
+    background-color: white;
+  width: 33%;
+  box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
+  border-radius: 15px;
+  padding: 3px;
+  margin: 1em;
+}
+.carte-heb img
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    height: 150px;
+
 }
 .block_hebergement
 {
+    height: 650px; 
+    width: 1008px; 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
