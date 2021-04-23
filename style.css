@@ -185,7 +185,12 @@ padding-right: 1em;
     
 }
 /* ********hebergements********* */
-
+.block-heberg_block-pop
+{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+}
 .titre h3
 {
     font-size: 18px;
@@ -194,6 +199,7 @@ padding-right: 1em;
 }
 .conteneur1
 {
+    width: 60%;
     display: inline-block;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -201,14 +207,14 @@ padding-right: 1em;
     align-items: center;
 }
 .box_heberg carte-heb
-{
+{   
     background-color: white;
-  width: 33%;
-  box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
-  border-radius: 15px;
-  padding: 3px;
-  margin: 1em;
-  margin-left: 2em;
+    width: 33%;
+    box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
+     border-radius: 15px;
+    padding: 3px;
+    margin: 1em;
+    margin-left: 2em;
 }
 .carte-heb img
 {
@@ -217,6 +223,14 @@ padding-right: 1em;
     border-radius: 15px;
     height: 150px;
 
+}
+.stars
+{
+    
+}
+.fas
+{
+   color: #0065FC; 
 }
 .block_hebergement
 {
@@ -233,22 +247,37 @@ padding-right: 1em;
     background-color:#f2f2f2; 
     margin: 10px;
 }
-
-.block-pop
+/* **********les plus populaires********** */
+#block-pop
 {
-    height: 650px; 
-    width: 432px; 
-    flex-direction: column;
     
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: #F2F2F2;
+    
+    border-radius: 20px;
+    
+}
+.box-pop
+{
+
 }
 .carte-pop
 {
     height: 150px;
     width: 340px;
-    background-color: lawngreen; 
     display: flex;
     margin: 10px;
 }
+#block-pop img
+{
+    width: 40%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+}
+/* **********Activités********** */
 .block-activité    
 {
     height: 570px; 
