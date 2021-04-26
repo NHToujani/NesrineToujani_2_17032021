@@ -6,7 +6,7 @@ body
 }
 .page
 {
-    padding: 2em;
+    padding: 0em;
     
 }
 /* header */
@@ -209,25 +209,24 @@ padding-right: 1em;
 .box_heberg carte-heb
 {   
     background-color: white;
-    width: 33%;
+    width: 32%;
     box-shadow: 3px 4px 3px 1px rgb(212, 209, 209);
-     border-radius: 15px;
+    border-radius: 15px;
     padding: 3px;
     margin: 1em;
     margin-left: 2em;
 }
-.carte-heb img
+.carte-heb
 {
     width: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     height: 150px;
+    background-color: white;
 
 }
 .stars
-{
-    
-}
 .fas
 {
    color: #0065FC; 
@@ -239,15 +238,37 @@ padding-right: 1em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 1em
+    ;
 }
 .carte-heb
 {
-    width: 240px;
-    height: 200px;
-    background-color:#f2f2f2; 
+   width: ;
+    
     margin: 10px;
+    
+}
+.carte-heb h3 .stars
+{
+    background-color:#ffffff;
+}
+.carte-heb img
+{
+    width: 100%;
+    height: 150px;
+    padding-right: 0.2em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+.stars
+{
+    background-color: #ffffff;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
 }
 /* **********les plus populaires********** */
+
 #block-pop
 {
     
@@ -255,13 +276,15 @@ padding-right: 1em;
     flex-direction: column;
     flex-wrap: nowrap;
     background-color: #F2F2F2;
-    
+    margin-top: 1em;
     border-radius: 20px;
     
 }
 .box-pop
 {
-
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
 }
 .carte-pop
 {
@@ -276,15 +299,60 @@ padding-right: 1em;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     object-fit: cover;
+    background-color: #ffffff;
 }
 /* **********Activités********** */
 .block-activité    
 {
-    height: 570px; 
     width: 100%;
-    display: inline-flex;
+    height: 570px;     
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     padding-top: 25px;
+    object-fit: cover;
 }
+
+
+.block-activité :nth-child(1)
+{
+    /*height: 450px;
+    width: 300px;*/
+    align-self: stretch;
+    
+}
+.block-activité :nth-child(2)
+{
+    /*height: 240px;
+    width: 300px;*/
+    align-self: flex-start;
+}
+.block-activité :nth-child(3)
+{
+   /* height: 160px;
+    width: 300px;*/
+    align-self: flex-end;
+}
+.block-activité :nth-child(4)
+{
+    /*height: 450px;
+    width: 300px;*/
+    align-self: stretch;
+}
+.block-activité :nth-child(5)
+{
+    /*height: 200px;
+    width: 300px;*/
+    align-self: flex-start;
+}
+.block-activité :nth-child(6)
+{
+    /*height: 210px;
+    width: 300px;*/
+    align-self: flex-end;
+}
+
+
 /*pied de page*/
 
 footer
