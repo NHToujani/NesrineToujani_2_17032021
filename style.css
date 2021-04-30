@@ -6,11 +6,15 @@ body
 }
 .page
 {
-    margin: 50px;
+    margin: 0px;
     
 }
 /* header */
-
+.navigateur, .inderheader, .filtres, .block-heberg_block-pop, .block-activite
+{
+    margin-left: 50px;
+    margin-right: 70px;
+}
 .logo
 {
     height: 50px;
@@ -34,6 +38,7 @@ body
 
 a {
     color:black;
+    text-decoration: none;
     list-style: none;
 }
 .links :hover {
@@ -97,6 +102,7 @@ h1
   display: none;
 }
 /* ********Filtres******** */
+
 
 
 .filtrephoto
@@ -173,7 +179,6 @@ padding-right: 1em;
 .block-heberg_block-pop
 {
     display: inline-flex;
-    width: 100%;
     justify-content: space-between;
     gap: 40px;
 }
@@ -227,10 +232,11 @@ padding-right: 1em;
 
 img
 {
-    width: 240px;
+    width: 210px;
     height: 120px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px 15px 0 0;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
     object-fit: cover;
 }
 .stars
@@ -283,7 +289,7 @@ img
 /* **********Activités********** */
 .block-activite    
 {
-    width: 100%;
+    width: auto;
     height: 570px;     
     
     padding-top: 25px;
@@ -292,41 +298,48 @@ img
 .box-img
 {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
+    /* flex-wrap: wrap; */
+     gap:2em;
+    
 }
 
+.carte-activites{
+    width:25%;
+    /* padding: 0 10px; */
+
+}
 .carte-act1
 {
-    height: 450px;
-    width: 300px;
+    /* height: 450px;
+    width: 300px; */
 }
 .carte-act2
 {
-    height: 240px;
-    width: 300px;
+    /* height: 240px;
+    width: 300px; */
 }
 .carte-act3
 {
-   height: 160px;
-    width: 300px;
-}
-.box-img
-{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
+   /* height: 160px;
+    width: 300px; */
 }
 
-    /*height: 450px;
-    width: 300px;*/
-
-    /*height: 200px;
-    width: 300px;*/
-
-    /*height: 210px;
-    width: 300px;*/
- 
+.img1{
+    width: 100%;
+    height: 380px;
+}
+.img2{
+    width: 100%;
+    height: 300px;
+}
+.img3{
+    width:100%;
+    height: 190px;
+}
+.img4{
+    width: 100%;
+    height: 80px;
+}
 /*pied de page*/
 
 footer
@@ -348,7 +361,6 @@ span
 {
     display: flex;
     padding: 0px;
-    padding-left: 55px;
     margin: 0px;
     
 }
@@ -360,9 +372,4 @@ span
 li
 {
     margin: 0px;
-}
-.filtres
-{
-    margin-left: 20px;
-    margin-right: 20px;
 }
