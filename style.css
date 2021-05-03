@@ -9,7 +9,7 @@ body
 }
 main
 {
-    padding: 2em;
+    padding: 1em;
 }
 
 /* header */
@@ -204,6 +204,19 @@ padding-right: 1em;
     font-size: 20px;
     margin-left: 1em;
 }
+.carte-heb .details h3
+{
+    font-size: 0.9em;
+    font-weight: bolder;
+    margin: 5px 0 5px 0;
+}
+.carte-heb .details p
+{
+    font-size: 0.8em;
+    margin: 5px 0 5px 0;
+    clear: both;
+
+}
 h3
 {
     font-size: 14px;
@@ -239,17 +252,18 @@ h3
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 3em;
-    padding-right: 3em;
-    padding-left: 3em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 .fstligne
 {
     display: flex;
+    width: 100%;
 }
 .sndligne
 {
     display: flex;
+    width: 100%;
 }
 .carte-heb 
 {
@@ -257,22 +271,24 @@ h3
     width: 33%;
     box-shadow: 3px 4px 3px 1px rgb(212 209 209);
     border-radius: 15px;
-    padding: 3px;
-    margin: 1em;
+    padding: 5px;
+    margin: 10px;
 }
 
 .carte-heb img
 {
     width: 100%;
-    height: 150px;
+    height: 120px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
-
+.details
+{
+    margin-left: 1em;
+}
 .stars
 {
-    font-size: 0.8em;
-    margin-left: 2em;
+    font-size: 0.7em;
 }
 .aff
 {
