@@ -9,34 +9,37 @@ body
 }
 main
 {
-    padding: 0px 60px;
-    width: auto;
+    padding: 2em;
 }
-.page
-{
-    margin: 0px;
-    
-}
+
 /* header */
-.logo
+.logo img
 {
     height: 50px;
     width: auto;
 }
-
-
 /* Navigateur */
 .navigateur
 {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    right: 0px;
 }
-.navigateur h2
+/* .navigateur h2
 {
     font-size: 18px;
     margin-left: 1em;
+} */
+nav ul
+{
+    display: flex;
+    align-items: center;
+}
+li 
+{
+    right: 0px;
+    margin: 0px;
+    list-style: none;
 }
 
 a {
@@ -44,17 +47,28 @@ a {
     text-decoration: none;
     list-style: none;
 }
-.links :hover {
-    border-top: 2px solid #0065fc;
-    margin-top: 1em ;
-    color:#0065fc;
-}
+
 .links {
     display: flex;
-    align-items: center;
-    padding-bottom: 8px;
 }
-.links a
+nav a
+{ 
+    color: black;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-top: 3.2em;
+}
+nav li :hover {
+    border-top: 2px solid #0065fc;
+    color:#0065fc;
+}
+.signin
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 2px;
+}
+.signin a
 {
     text-decoration: none;
     font-weight: bold;
@@ -182,12 +196,13 @@ padding-right: 1em;
 .block-heberg_block-pop
 {
     display: inline-flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 40px;
 }
-h3.titre
+.menu h2
 {
     font-size: 20px;
+    margin-left: 1em;
 }
 h3
 {
@@ -198,7 +213,7 @@ h3
 }
 .conteneur1
 {
-    width: 68%;
+    width: 66%;
     display: inline-block;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -228,19 +243,28 @@ h3
     padding-right: 3em;
     padding-left: 3em;
 }
+.fstligne
+{
+    display: flex;
+}
+.sndligne
+{
+    display: flex;
+}
 .carte-heb 
 {
-   
-   flex: 1 0 0;
-   min-width: 150px;
-   background-color: #ffffff;
-   border-radius: 15px;
+    background-color: white;
+    width: 33%;
+    box-shadow: 3px 4px 3px 1px rgb(212 209 209);
+    border-radius: 15px;
+    padding: 3px;
+    margin: 1em;
 }
 
-img
+.carte-heb img
 {
-    width: 210px;
-    height: 120px;
+    width: 100%;
+    height: 150px;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
@@ -379,5 +403,4 @@ span
 li
 {
     margin: 0px;
-}
 }
