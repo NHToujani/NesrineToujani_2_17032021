@@ -2,7 +2,7 @@
 /* body */
 body
 {
-    font-family: 'Raleway'; 'sans-serif';
+    font-family: 'Raleway', 'sans-serif';
     margin: 0px;
 }
 main
@@ -52,19 +52,17 @@ a {
 nav a
 { 
     color: black;
-    padding-right: 2em;
-    padding-left: 2em;
-    padding-top: 3.2em;
+    padding: 2em;
 }
 nav li :hover {
-    border-top: 2px solid #0065fc;
+    border-top: 3px solid #0065fc;
     color:#0065fc;
 }
 .signin
 {
     display: flex;
     align-items: center;
-    padding-bottom: 2px;
+    padding: 2px 2px 1px 0;
 }
 .signin a
 {
@@ -119,6 +117,7 @@ h1
 .filtrephoto
 {
 display: flex;
+align-items: baseline;
 }
 .filter-container
 {
@@ -233,9 +232,13 @@ h3
     margin: 1em;
     margin-left: 2em;
 }
-.fas
+.fas.fa-star.full
 {
    color: #0065FC; 
+}
+.fas.fa-star.simple
+{
+    color: rgba(128, 128, 128, 0.349);
 }
 .fas.fa-map-marker-alt,
 .fas.fa-chart-line {
@@ -261,7 +264,7 @@ h3
     display: flex;
     width: 100%;
 }
-.carte-heb 
+.carte-heb
 {
     background-color: white;
     width: 33%;
@@ -286,7 +289,6 @@ h3
 .stars
 {
     font-size: 0.7em;
-    position: absolute;
     bottom: 0;
 }
 .aff
@@ -330,8 +332,12 @@ h3
     object-fit: cover;
     background-color: #ffffff;
     height: 130px;
+} 
+.stars.pop{
+    position: absolute;
 }
-.carte{border-top-left-radius: 15px;
+.carte
+{border-top-left-radius: 15px;
     border-top-right-radius: 0px;
 }
 /* **********Activités********** */
@@ -345,18 +351,22 @@ h3
 .box-img
 {
     display: flex;
-    /* flex-wrap: wrap; */
      gap:2em;
     
 }
 
-.carte-activites{
-    width:25%;
-    /* padding: 0 10px; */
+.activ {
+    
+    background-color: white;
+    box-shadow: 3px 4px 3px 1px rgb(212 209 209);
+    border-radius: 15px;
+    padding-block-end: 1px;
+
 
 }
 .carte-activites img {
     object-fit: cover;
+    border-radius: 15px 15px 0 0;
   }
 .img1{
     width: 100%;
@@ -380,8 +390,7 @@ footer
 {
     display: flex;
     background: #f2f2f2;
-    width:100%;
-    padding: 20px
+    padding: 20px 0 0 20px
 }
 footer ul{
     padding: 0;
@@ -418,15 +427,36 @@ li
       }
 }
 @media only screen and (max-width: 767px) {
-      .links nav {
+    main{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }  
+    .links nav {
         display: none;
-      }
-      .mobilenav > * {
+    }
+    .mobilenav > * {
         display: inline-block;
         width: 50%;
         text-align: center;
+        font-size: 1em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0 15px 0;
+        padding-top: 30px;
+    }
+    .mobilenav > a {
+        width: 50%;
+        margin: 0;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #F2F2F2;
       }
-      .filtrephoto {
+    .mobilenav > a :hover {
+        border-top: 3px solid #0065fc;
+        color:#0065fc;
+    } 
+      .filtrephoto { 
         flex-direction: column;
       }
       .conteneur1 {
@@ -449,6 +479,9 @@ li
       }
       .conteneur2 {
         order: 1;
+      }
+      .stars{
+          bottom: 0em;
       }
       .block-heberg_block-pop {
         flex-direction: column;
