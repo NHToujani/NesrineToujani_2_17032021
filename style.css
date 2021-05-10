@@ -69,7 +69,7 @@ h1 {
 .search {
   display: flex;
   align-items: center;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 10px 0;
 }
 .search i {
   background-color: #f2f2f2;
@@ -113,7 +113,7 @@ h1 {
 }
 .filterphoto > h2 {
   font-size: large;
-  padding: 1em;
+  padding: 0 1em 0 0;
 }
 
 .button-filter {
@@ -399,7 +399,7 @@ header, main {
   margin: 0; 
   width: auto;
 }
-.padding20
+.interheader,.filters, .block-activity
 {
   padding: 0 20px 0;
 }
@@ -512,7 +512,17 @@ header, main {
   .fa-search:before {
     color: #ffffff;
   }
+  /* .filterphoto {
+    flex-direction: column;
+  } */
+  .filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
   .filterphoto {
+    display: flex;
+    align-items: baseline;
     flex-direction: column;
   }
   .button-filter a {
