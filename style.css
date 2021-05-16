@@ -27,12 +27,6 @@ nav{
     font-size: 1.1em;
     justify-content: space-around;
 }
-/* .navigateur h2
-{
-    font-size: 18px;
-    margin-left: 1em;
-} */
-
 li {
   right: 0px;
   margin: 0px;
@@ -386,7 +380,7 @@ footer h3 {
   font-size: 1em;
 }
 /*Responsive Design: Tablette*/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px){
 header, main {
   padding: 0 1em 2em;
   margin: 0; 
@@ -438,9 +432,6 @@ header, main {
   header, main {
     width: auto;
 }
-  .mobilenav > * {
-    display: none;
-  }
   footer {
     padding: 0 0 50px 0px;
   }
@@ -457,7 +448,7 @@ header, main {
   }
 }
 /* Responsive Mobile*/
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .padding20 {
     padding: 0 20px 0px 20px;
   }
@@ -466,34 +457,43 @@ header, main {
     margin: 0;
     width: auto;
   }
+  .logo
+  {
+    width: 100%;
+    padding: 20px 0 0 20px;
+  }
   .navigateur {
-    padding: 15px;
-    margin-top: 0;
+    display: flex;
+    flex-direction: column;
   }
-  .links nav {
+  /* .links nav {
     display: none;
-  }
-  .mobilenav > * {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    font-size: 1em;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 0 15px 0;
-  }
-  .mobilenav > a {
-    width: 50%;
-    margin: 0;
-    padding-bottom: 15px;
+  } */
+  .navhosting {
+    color: black;
+    display: flex;
+    border-top: 3px solid transparent;
     border-bottom: 3px solid #f2f2f2;
   }
-  .mobilenav a[data-active="true"] {
+  .navactivity{
+    color: black;
+    display: flex;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  a.signin
+  {
+    position:absolute;
+    right: 0;
+    top: 0;
+
+  }
+  .navhosting[data-active="true"] {
     border-bottom-color: #0065fc;
     color: #0065fc;
   }
-  .mobilenav a:hover {
+  nav a:nth-child(1):hover , nav a:nth-child(2):hover{
+    border-top: 3px solid transparent;
     border-bottom: 3px solid;
     color: #0065fc;
   }
