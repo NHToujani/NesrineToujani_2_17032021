@@ -21,11 +21,11 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-nav{
-    display: flex;
-    width: 35%;
-    font-size: 1.1em;
-    justify-content: space-around;
+nav {
+  display: flex;
+  width: 35%;
+  font-size: 1.1em;
+  justify-content: space-around;
 }
 li {
   right: 0px;
@@ -41,12 +41,14 @@ nav a {
   color: black;
   padding: 30px;
 }
-nav a:nth-child(1) , nav a:nth-child(2){
-  border-top: 3px solid transparent
+nav a:nth-child(1),
+nav a:nth-child(2) {
+  border-top: 3px solid transparent;
 }
-nav a:nth-child(1):hover , nav a:nth-child(2):hover{
+nav a:nth-child(1):hover,
+nav a:nth-child(2):hover {
   border-top: 3px solid #0065fc;
-  color: #0065fc
+  color: #0065fc;
 }
 .signin {
   display: flex;
@@ -83,7 +85,7 @@ h1 {
 }
 #mysearch {
   border: 2px solid #f2f2f2;
-  padding: 0.85em;
+  padding: 0.86em;
   margin: 0px;
 }
 ::placeholder {
@@ -112,7 +114,7 @@ h1 {
 .button-filter {
   display: flex;
   align-items: center;
-  margin-right: 2em;
+  margin-right: 1em;
   margin-bottom: 0.5em;
   border: 2px solid #f2f2f2;
   border-radius: 30px;
@@ -140,15 +142,15 @@ h1 {
   padding: 20px 0;
 }
 .iconeI {
-  color: #0065FC;
+  color: #0065fc;
   background-color: white;
   height: 25px;
   width: 25px;
   line-height: 23px;
   text-align: center;
   border-radius: 50%;
-  border: #D9D9D9 solid 1px;
-  float: left
+  border: #d9d9d9 solid 1px;
+  float: left;
 }
 
 .iconeI .fas {
@@ -178,7 +180,7 @@ h1 {
   clear: both;
 }
 h3 {
-  font-size: 14px ;
+  font-size: 14px;
 }
 
 .conteneur1 {
@@ -211,7 +213,8 @@ h3 {
   flex-direction: row;
   gap: 20px;
 }
-.fstligne , .sndligne {
+.fstligne,
+.sndligne {
   display: flex;
   column-gap: 30px;
   width: 100%;
@@ -242,7 +245,7 @@ h3 {
   padding: 40px 0 0;
   font-weight: 800;
 }
-.aff p{
+.aff p {
   margin: 0;
 }
 /* **********les plus populaires********** */
@@ -260,8 +263,7 @@ h3 {
   flex-direction: column;
   padding: 0 40px 40px;
 }
-.gap-pop
-{
+.gap-pop {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -313,13 +315,14 @@ h3 {
   gap: 2em;
 }
 
-.activity , .carte-activity {
+.activity,
+.carte-activity {
   background-color: white;
   box-shadow: 0px 0px 10px 3px #8080802b;
   border-radius: 20px;
-  
 }
-.carte-act2 , .carte-act3{
+.carte-act2,
+.carte-act3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -351,8 +354,8 @@ h3 {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
-.activity h3 , .carte-activity h3
-{
+.activity h3,
+.carte-activity h3 {
   margin-left: 1em;
 }
 /*pied de page*/
@@ -380,58 +383,59 @@ footer h3 {
   font-size: 1em;
 }
 /*Responsive Design: Tablette*/
-@media screen and (min-device-width : 768px) and (max-device-width : 1024px){
-header, main {
-  padding: 0 1em 2em;
-  margin: 0; 
-  width: auto;
-}
-.interheader,.filters, .block-activity
-{
-  padding: 0 20px 0;
-}
-.title-filters
-{
-  padding: 0 0 20px;
-}
-.filterphoto
-{
-  display: flex;
-  flex-direction: column;
-}
-.block-host_block-pop
-{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.conteneur1 , #block-pop
-{
-  width: 100%;
-}
-.carte-pop .details, .details h3 {
-  font-size: x-large;
-}
-.details>h3, p
-{
-  margin-top: 0;
-}
-.box-img
-{
-  display: flex;
-  flex-direction: column;
-}
-.img1 , .img2 , .img3 , .img4
-{
-  height: 200px;
-}
-
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header,
+  main {
+    padding: 0 1em 2em;
+    margin: 0;
+    width: auto;
+  }
+  .interheader,
+  .filters,
+  .block-activity {
+    padding: 0 20px 0;
+  }
+  .title-filters {
+    padding: 0 0 20px;
+  }
+  .filterphoto {
+    display: flex;
+    flex-direction: column;
+  }
+  .block-host_block-pop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .conteneur1,
+  #block-pop {
+    width: 100%;
+  }
+  .carte-pop .details,
+  .details h3 {
+    font-size: x-large;
+  }
+  .details > h3,
+  p {
+    margin-top: 0;
+  }
+  .box-img {
+    display: flex;
+    flex-direction: column;
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 200px;
+  }
 }
 /*Responsive Desktop*/
 @media screen and (min-width: 768px) {
-  header, main {
+  header,
+  main {
     width: auto;
-}
+  }
   footer {
     padding: 0 0 50px 0px;
   }
@@ -441,7 +445,6 @@ header, main {
     align-content: center;
     align-items: baseline;
     width: 100%;
-
   }
   .footer_column {
     padding: 10px 210px 10px 30px;
@@ -449,16 +452,15 @@ header, main {
 }
 /* Responsive Mobile*/
 @media screen and (max-width: 767px) {
-  .padding20 {
+  /* .padding20 {
     padding: 0 20px 0px 20px;
-  }
+  } */
   main {
     padding: 0;
     margin: 0;
     width: auto;
   }
-  .logo
-  {
+  .logo {
     width: 100%;
     padding: 20px 0 0 20px;
   }
@@ -466,33 +468,31 @@ header, main {
     display: flex;
     flex-direction: column;
   }
-  /* .links nav {
-    display: none;
-  } */
-  .navhosting {
-    color: black;
-    display: flex;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid #f2f2f2;
+  nav {
+    width: 100%;
+    margin: 10px 0;
   }
-  .navactivity{
-    color: black;
-    display: flex;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid #f2f2f2;
-  }
-  a.signin
-  {
-    position:absolute;
-    right: 0;
-    top: 0;
 
+  nav a:nth-child(1),
+  nav a:nth-child(2) {
+    width: 50%;
+    color: black;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid #f2f2f2;
+    text-align: center;
+    padding: 10px 0;
   }
-  .navhosting[data-active="true"] {
+  nav a:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  nav a:nth-child(1)[data-active="true"] {
     border-bottom-color: #0065fc;
     color: #0065fc;
   }
-  nav a:nth-child(1):hover , nav a:nth-child(2):hover{
+  nav a:nth-child(1):hover,
+  nav a:nth-child(2):hover {
     border-top: 3px solid transparent;
     border-bottom: 3px solid;
     color: #0065fc;
@@ -508,19 +508,30 @@ header, main {
   .fa-search:before {
     color: #ffffff;
   }
-  /* .filterphoto {
-    flex-direction: column;
-  } */
-  .filter-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  #mysearch {
+    width: 280px;
+    font-weight: bold;
+  }
+  .inderheader {
+    padding: 0 15px;
+  }
+  .filters {
+    padding: 0 15px;
   }
   .filterphoto {
     display: flex;
     align-items: baseline;
     flex-direction: column;
   }
+  .filterphoto > h2 {
+    padding: 0 0 10px 0;
+  }
+  .filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .button-filter a {
     font-weight: 700;
   }
@@ -528,6 +539,7 @@ header, main {
     width: 100%;
     order: 2;
     background-color: unset;
+    padding: 0;
   }
   .fstligne {
     display: flex;
@@ -541,21 +553,30 @@ header, main {
   }
   .carte-host {
     width: 100%;
-    margin: 10px 0 0 10px;
+    margin: 15px 0 0;
     box-shadow: 0px 0px 10px 3px #8080802b;
   }
   .menu h2 {
     margin-top: 0;
-    padding: 0 0 10px;
+    padding: 0 20px 10px;
     font-weight: 800;
     font-size: 23px;
   }
-
-  .carte-pop {
-    padding: 0.3em;
+  .box_host {
+    padding: 0 20px;
   }
   .conteneur2 {
     order: 1;
+  }
+  .carte-pop {
+    padding: 0.3em;
+  }
+
+  .title {
+    padding: 10px 0;
+  }
+  .gap-pop {
+    gap: 10px;
   }
   .stars {
     bottom: 0em;
@@ -567,7 +588,7 @@ header, main {
     gap: 0;
   }
   .aff {
-    margin-left: 1em;
+    padding-top: 30px;
   }
   .aff p a {
     font-weight: 800;
@@ -587,7 +608,10 @@ header, main {
   }
   .box-img {
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5em;
+  }
+  .box-img > div {
+    gap: 1.5em;
   }
   .box-img h3 {
     margin-left: 1em;
@@ -597,7 +621,11 @@ header, main {
     padding: 0 0 20px;
     font-weight: 800;
   }
-  .activity,.activ {
+  .block-activity {
+    padding: 25px 20px 0;
+  }
+  .activity,
+  .activ {
     width: 100%;
     box-shadow: 0px 0px 10px 3px #8080802b;
     border-radius: 20px;
@@ -605,15 +633,18 @@ header, main {
   /* .carte-activity img {
     height: 120px;
   } */
-  .carte-act3,.carte-act2 {
+
+  .carte-act3,
+  .carte-act2 {
     display: flex;
     flex-direction: column;
-    gap: 1em;
   }
-  .img1 , .img2 , .img3 , .img4
-{
-  height: 120px;
-}
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 120px;
+  }
 
   footer {
     flex-direction: column;
