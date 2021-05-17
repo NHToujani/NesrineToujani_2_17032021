@@ -5,7 +5,7 @@ body {
   margin: 0px;
 }
 main {
-  padding: 0.5em 3em 4em;
+  padding: 0 50px 40px;
 }
 h2 {
   margin-bottom: 0;
@@ -24,7 +24,7 @@ h2 {
 nav {
   display: flex;
   width: 35%;
-  font-size: 1.1em;
+  font-size: 14px;
   justify-content: space-around;
 }
 li {
@@ -39,7 +39,7 @@ a {
 }
 nav a {
   color: black;
-  padding: 30px;
+  padding: 50px 20px 30px;
 }
 nav a:nth-child(1),
 nav a:nth-child(2) {
@@ -73,20 +73,21 @@ h1 {
   border-bottom-left-radius: 15px;
 }
 .submit {
-  padding: 13px;
-  font-size: 12px;
+  padding: 12px;
+  font-size: 14px;
   background-color: #0065fc;
   cursor: pointer;
   color: white;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: none;
-  width: 10em;
+  width: 8em;
 }
 #mysearch {
   border: 2px solid #f2f2f2;
   padding: 0.86em;
   margin: 0px;
+  font-weight: 600;
 }
 ::placeholder {
   color: black;
@@ -100,6 +101,7 @@ h1 {
 .filterphoto {
   display: flex;
   align-items: baseline;
+  margin-top: 20px;
 }
 .filter-container {
   display: flex;
@@ -164,10 +166,10 @@ h1 {
   display: inline-flex;
   gap: 40px;
 }
-.menu h2 {
+.menu h2 , .title {
   font-size: 20px;
   margin: 0;
-  padding: 40px 0 30px;
+  padding: 40px 0 20px;
 }
 .carte-host .details h3 {
   font-size: 0.9em;
@@ -181,6 +183,7 @@ h1 {
 }
 h3 {
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .conteneur1 {
@@ -234,8 +237,12 @@ h3 {
   object-fit: cover;
 }
 .details {
-  margin-left: 1em;
+  margin-left: 10px;
   position: relative;
+}
+.details p{
+  font-size: 14px;
+  margin-top: 0em;
 }
 .stars {
   font-size: 0.7em;
@@ -275,11 +282,6 @@ h3 {
   justify-content: space-between;
   align-items: baseline;
 }
-.title {
-  margin: 0;
-  font-size: larger;
-  padding: 40px 0 30px;
-}
 .box-pop-title .fas {
   font-size: larger;
 }
@@ -312,7 +314,7 @@ h3 {
 }
 .box-img {
   display: flex;
-  gap: 2em;
+  gap: 2.5em;
 }
 
 .activity,
@@ -356,7 +358,8 @@ h3 {
 }
 .activity h3,
 .carte-activity h3 {
-  margin-left: 1em;
+  margin: 15px;
+
 }
 /*pied de page*/
 
@@ -367,6 +370,7 @@ footer {
   margin: 0;
 }
 footer h3 {
+  font-size: 15px;
   font-weight: bold;
   padding: 20px 0 0px 20px;
 }
@@ -375,15 +379,13 @@ footer ul {
   padding: 0 0 0 20px;
 }
 footer li {
-  font-size: 0.9em;
+  font-size: 14px;
   padding: 10px 0 0 0;
   list-style: none;
 }
-footer h3 {
-  font-size: 1em;
-}
+
 /*Responsive Design: Tablette*/
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (max-device-width: 1024px) {
   header,
   main {
     padding: 0 1em 2em;
@@ -414,10 +416,6 @@ footer h3 {
   .carte-pop .details,
   .details h3 {
     font-size: x-large;
-  }
-  .details > h3,
-  p {
-    margin-top: 0;
   }
   .box-img {
     display: flex;
@@ -462,7 +460,7 @@ footer h3 {
   }
   .logo {
     width: 100%;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 25px;
   }
   .navigateur {
     display: flex;
