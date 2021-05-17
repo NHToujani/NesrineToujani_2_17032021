@@ -186,6 +186,7 @@ h1 {
 h3 {
   font-size: 14px;
   margin-bottom: 5px;
+  margin-top: 2px;
 }
 
 .conteneur1 {
@@ -249,6 +250,7 @@ h3 {
 .stars {
   font-size: 0.7em;
   bottom: 0;
+  
 }
 .aff {
   padding: 40px 0 0;
@@ -402,7 +404,9 @@ footer li {
 }
 
 /*Responsive Design: Tablette*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
 {
   header, main {
     width: auto;
@@ -418,6 +422,9 @@ footer li {
     display: flex;
     flex-direction: column;
   }
+  .filterphoto > h2 {
+    padding: 0 0 10px 0;
+  }
   .block-host_block-pop {
     display: flex;
     flex-direction: column;
@@ -427,7 +434,7 @@ footer li {
     width: auto;
   }
   .carte-pop .details, .details h3 {
-    font-size: x-large;
+    font-size: large;
   }
   #block-pop, .box-img {
     display: flex;
