@@ -140,7 +140,7 @@ h1 {
 }
 .filterI {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1em;
   padding: 20px 0;
 }
@@ -467,8 +467,8 @@ footer li {
     width: auto;
   }
   .logo {
-    width: 100%;
-    padding: 20px 0 0 25px;
+    width: 90%;
+    padding: 10px 0 0 10px;
   }
   .navigateur {
     display: flex;
@@ -491,7 +491,8 @@ footer li {
   nav a:nth-child(3) {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 0;
+    padding: 30px 20px 30px;
   }
   nav a:nth-child(1)[data-active="true"] {
     border-bottom-color: #0065fc;
@@ -540,6 +541,11 @@ footer li {
 
   .button-filter a {
     font-weight: 700;
+  }
+  .iconeI
+  {
+    width: 30px;
+    height: 26px;
   }
   .conteneur1 {
     width: 100%;
@@ -628,7 +634,7 @@ footer li {
     font-weight: 800;
   }
   .block-activity {
-    padding: 25px 20px 0;
+    padding: 25px 20px 50px;
   }
   .activity,
   .activ {
@@ -636,10 +642,6 @@ footer li {
     box-shadow: 0px 0px 10px 3px #8080802b;
     border-radius: 20px;
   }
-  /* .carte-activity img {
-    height: 120px;
-  } */
-
   .carte-act3,
   .carte-act2 {
     display: flex;
@@ -651,9 +653,13 @@ footer li {
   .img4 {
     height: 120px;
   }
-
+  footer {
+    padding: 0 0 20px;
+}
   .groupe_footer {
-    display: flex;
     flex-direction: column;
+  }
+  .footer_column {
+    padding: 10px 100px 10px 10px;
   }
 }
