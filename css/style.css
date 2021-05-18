@@ -408,7 +408,10 @@ footer li {
   and (min-width: 768px) 
   and (max-width: 1024px) 
 {
-  header, main {
+  header{
+    padding: 0 0 10px
+  }
+  main {
     width: auto;
     padding: 0 50px 40px;
   }
@@ -434,7 +437,15 @@ footer li {
     width: auto;
   }
   .carte-pop .details, .details h3 {
-    font-size: large;
+    font-size: medium;
+  }
+  .menu h2 , .title
+  {
+    padding: 20px 0 20px;
+  }
+  .aff
+  {
+    padding: 20px 0 10px;
   }
   #block-pop, .box-img {
     display: flex;
