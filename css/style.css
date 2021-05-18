@@ -245,12 +245,9 @@ h3 {
 }
 .details p {
   font-size: 14px;
-  margin-top: 0em;
 }
 .stars {
-  font-size: 0.7em;
-  bottom: 0;
-  
+  font-size: 0.7em;  
 }
 .aff {
   padding: 40px 0 0;
@@ -298,6 +295,9 @@ h3 {
 }
 .carte-pop .details {
   margin-right: 15px;
+}
+.stars.pop {
+  position: absolute;
 }
 #block-pop img {
   width: 40%;
